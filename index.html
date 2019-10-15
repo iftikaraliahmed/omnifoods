@@ -4,109 +4,201 @@
 	<link href="bootstrap-4.3.1-dist/css/bootstrap-theme-min.css" rel="stylesheet">    
 	<link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-
-    	<link href="style.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome-5.10.2/metadata/icons.json" rel="stylesheet">
+    <link href="font-awesome-5.10.2/svgs/brands/.svg" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>	
 	
-	</head>
 <body>
 	
     <header>
 		<div class="row">
 			<div class="logo">
 				<img src="img/food-logo3.png">
+    	            <style>
+                    .nav
+                    {
+                        overflow: hidden;
+                        background-color: #333;
+                        font-family: tahoma;
+                        font-style: bold;
+                        margin-top:50px;
+                    }
+                    
+                    .nav > a 
+                    {
+                        float:left;
+                        font-size:16px;
+                        color:white;
+                        border-bottom: 2px solid #e67e22;
+                        text-align: center;
+                        padding: 14px 16px;
+                        display: inline-block;
+                    }
+                    
+                    .dropdown 
+                    {
+                      position: relative;
+                      float: left;
+                      overflow: hidden;
+                      display: inline-block;
+                    }
+                    
+                    .dropdown .dropbtn 
+                    {
+                      cursor: pointer;
+                      font-size: 16px;  
+                      border: none;
+                      outline: none;
+                      color: white;
+                      padding: 14px 16px;
+                      background-color: inherit;
+                      font-family: inherit;
+                      margin: 0 auto;
+                    }
+                    
+                    .nav a:hover, .dropdown:hover .dropbtn, .dropbtn:focus 
+                    {
+                      color:#e67e22;
+                      transition: all 0.5s ease-in;
+                     
+                    }
+                    
+                    .dropdown-content 
+                    {
+                      display: none;
+                      position: absolute;
+                      min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                      display: none;
+                      background-color: #333;
+                    }
+                    
+                    .dropdown-content a 
+                    {
+                      transition: all 0.5s ease-in;
+                      float: none;
+                      color: white;
+                      padding: 12px 16px;
+                      text-decoration: none;
+                      display: block;
+                      text-align: left;
+                    }
+                    
+                    .dropdown-content a:hover 
+                    {
+                      background-color: #e67e22;
+                      color:white;
+                    }
+                    
+                    .show
+                    {
+                      display: block;
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <div class="nav">
+                      <a href="#">Home</a>
+                      <a href="#">News</a>
+                           
+                            <div class="dropdown">
+                             <button class="dropbtn" onclick="myFunction()">Dropdown
+                                 <i class="fa fa-caret-down"></i>
+                              </button>
+                                 <div class="dropdown-content" id="myDropdown">
+                                     <a href="#">Link 1</a>
+                                     <a href="#">Link 2</a>
+                                     <a href="#">Link 3</a>
+                                 </div>
+                            </div> 
+                    
 
-			<ul class="main-nav">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="cuisine.php">CUISINE</a>
-					<ul>
-						<li><a href="menu-northindancuisine.php">North Indian </a></li>
-						<li><a href="menu-southindiancuisine.php">South Indian </a></li>
-						<li><a href="menu-assamesecuisine.php">Assamese </a></li>
-						<li><a href="menu-malayalamcuisine.php">Malayalam</a></li>
-						<li><a href="menu-chinesecuisine.php">Chinese</a></li>
-						<li><a href="menu-italiancuisine.php">Italian</a></li>
-						<li><a href="menu-americancuisine.php">American</a></li>
-						<li><a href="menu-mexicancuisine.php">Mexican</a></li>
-					    <li><a href="menu-breakfast.php">Daily Breakfast</a></li>
-			        </ul>
-			    </li>
-			<li><a href="">FOOD ORDERS</a></li>
-			<li><a href="">TESTIMONIALS</a></li>
-			<li><a href="">OUR SELECTED CITIES</a></li>
-			<li><a href="about-us.php">ABOUT US</a></li>
 
-		    </ul>
-    	</div>
-	
-	    <div class="u1">
-		<h1>ALL GOOD FOOD <br>COMES FROM A START<br> </h1>	
-		<div class="button-awesome">
-		<a href="" class="btn btn-half">Show me more</a>
-		<a href="" class="btn btn-full">I am hungry</a>
-		<a href="specials-me.php" class="btn btn-ifti1">Iftikar's Specials</a>
-		<a href="specials-nayana.php" class="btn btn-nayana1">Nayana's Specials</a>
+
+
+
+
+                    </div>
+                    
+                    <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() 
+                    {
+                      document.getElementById("myDropdown").classList.toggle("show");
+                    }
+                    
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function(e) {
+                      if (!e.target.matches('.dropbtn')) {
+                      var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                          myDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                    </script>
+                    </body>
+        
+        </header>
+        
+        <div class="u1">
+          <h1>All Good Food <br> Comes From A Start</h1>    
+              <div class="button-awesome">
+                  <a href="specials-me.php" class="btn btn-ifti1">Iftikar's Specials</a>
+                  <a href="specials-nayana.php" class="btn btn-nayana1">Nayana's Specials</a>
+                </div>
         </div>
-        </div>
-
-	</header>
     
     <section class="features">
     
-    <h2 class="text-center">GET FOOD FAST NOT THE FAST FOOD</h2>	
+    <h2 class="text-center">GET FOOD FAST &mdash; NOT FAST FOOD</h2>	
     
         <p class="copy">
-          Oh yeah, i like it. Okay so where do i start?... I love food and i am making it for myself.
-          And no fuckers can take my recipes away. Okay. Browse time, folks go have that food you like. Okay, don't disturb me.
-
+          Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!
         </p>
     
     <div class="container">
     	<div class="row">
     	   <div class="col-md-3">
-    			<i class="fa fa-certificate"></i>	
-    				<h4>Have Healthy Meals</h4>
-    	
-
-    	            <p class="arranging">
-    		
-    		     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-    	            </p>
+    			<i class="fa fa-calendar"></i>	
+    				<h4>We run the year baby</h4>
+    	                <p class="arranging">
+    		                Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+    	                </p>
 
     	    </div>
     	
-    	<div class="col-md-3">
-    		<i class="fa fa-camera"></i>
-    	       <h4>Have Healthy Meals</h4>
-    	          <p class="arranging">
-    		
-    		         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                 
-                 </p>
-        </div>
+    	    <div class="col-md-3">
+    			<i class="fa fa-clock-o"></i>
+    	            <h4>Ready in 30 minutes</h4>
+    	          		<p class="arranging">
+    		                You're only thirty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                        </p>
+            </div>
     	
-    	<div class="col-md-3">
-    		<i class="fa fa-envelope"></i>
-    	       <h4>Have Healthy Meals</h4>
-    	           <p class="arranging">
-    		
-    		         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+    	    <div class="col-md-3">
+    			<i class="fa fa-leaf"></i>
+    	       		<h4>100% Organic & Fresh</h4>
+    	            	<p class="arranging">
+                           All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                        </p>
+            </div>
     	
-    	            </p>
+    	    <div class="col-md-3">
+    			<i class="fa fa-heart"></i>
+    	         	<h4>Order anything, anywhere</h4>
+    	             	<p class="arranging">
+    	                   We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you my friend!
+                        </p>	
+            </div>
 
-    	</div>
-    	
-    	<div class="col-md-3">
-    		<i class="fa fa-heart"></i>
-    	         <h4>Have Healthy Meals</h4>
-    	             <p class="arranging">
-    	
-    		         There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                    
-                     </p>	
         </div>
-
-      </div>
     </div>
 
     </section>
@@ -172,47 +264,37 @@
     </section>
 
     <section class="mobile">
-    <h3 class="text-center">HOW OUR APP WORKS</h3>
-    <div class="container">
-        <div class="row">
-    	    <div class="col-md-6">
+    	<h3 class="text-center">HOW OUR APP WORKS</h3>
+    		<div class="container">
+        		<div class="row">
+    	    		<div class="col-md-6">
     		     
-    		     <div class="pic">
-    		          <img src="img/app-iPhone.png"> 
-    	         </div>
-    	         
-    	         <div class="col-md-6">
-    	            <div class="works-step">
+    		    			<div class="pic">
+    		                <img src="img/app-iPhone.png"> 
+    	                    </div>
+    	          	</div>
+    	            <div class="col-md-6">
+    	            	<div class="works-step">
     		
     				     <div>1</div>
-    					 <p>
-    		             This app is not only for winners it is also for losers also.
-    	                 </p>
+    					 <p>Choose the subscription plan that best fits your needs and sign up today.</p>
     					 
     					 <div>2</div>
-    		             <p>
-    				     Food is a bliss.
-    	                 </p>
+    		             <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
 
     					 <div>3</div>
-    		             <p>
-    			         Be it breakfast lunch or dinner, ahh... "food is love".
-    	                 </p>
-    		
-                         <div>4</div>
-    	                 <p>
-                          Closes 11:30pm, cause we think that we need to sleep more often, unless food haunts us!
-    	                 </p>
-    		
-    					<a href="https://www.apple.com/in/ios/app-store/"><img src="img/download-app.svg"></a>
-    					<a href="https://play.google.com/store"><img src="img//download-app-android.png"></a>
-        
-    
-    	            </div>
+    		             <p>Enjoy your meal after less than 30 minutes. See you the next time!</p>
+    						
+    					<div>4</div>
+    					<p>We close at 11:30pm because we also think that we need some sleep, else food haunts us!</p>	
+
+    					<a href="https://www.apple.com/in/ios/app-store/"><img src="img/download-app.svg" alt="App Store Button"></a>
+    					<a href="https://play.google.com/store"><img src="img//download-app-android.png" alt="Play Store Button"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>    
+        
     </section>
     
     <section class="cities">
@@ -224,28 +306,28 @@
     			<h4>Guwahati</h4>
     			<p><i class="fa fa-smile-o"></i> 25000+ Happy customers</p>
                 <p><i class="fa fa-wifi"></i> Wi-Fi Friendly</p>
-                <p><i class="fa fa-check"></i> 350+ orders and counting </p>
+                <p><i class="fa fa-envelope-o"></i> 350+ orders and counting </p>
     		
     		</div> <div class="col-md-3">
     		<img src="img/new-delhi.jpg">
     			<h4>New Delhi</h4>
     			<p><i class="fa fa-smile-o"></i> 100000+ Happy customers</p>
                 <p><i class="fa fa-wifi"></i> Wi-Fi Friendly</p>
-                <p><i class="fa fa-check"></i> 10000+ orders and counting </p>
+                <p><i class="fa fa-envelope-o"></i> 10000+ orders and counting </p>
     		
     		</div> <div class="col-md-3">
     		<img src="img/mumbai.jpg">
     			<h4>Mumbai</h4>
     			<p><i class="fa fa-smile-o"></i> 2500000+ Happy customers</p>
                 <p><i class="fa fa-wifi"></i> Wi-Fi Friendly </p>
-                <p><i class="fa fa-check"></i> 900000+ orders and counting</p>
+                <p><i class="fa fa-envelope-o"></i> 900000+ orders and counting</p>
     		
     		</div> <div class="col-md-3">
     		<img src="img/chennai.jpg">
     			<h4>Chennai</h4>
     			<p><i class="fa fa-smile-o"></i> 1700000+ Happy customers</p>
                 <p><i class="fa fa-leaf"></i> Environment Friendly</p>
-                <p><i class="fa fa-check"></i> 6700000+ orders and counting</p>
+                <p><i class="fa fa-user-o"></i> 2400+ top chefs</p>
     		
     		</div>
 
@@ -268,7 +350,7 @@
             </p>
             
             <p>
-             - Nayana R, Co-Owner of Omnifoods & a straight Data Scientist for Fractal Analytics. <a class="fb" href="https://www.facebook.com/99nayan99" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook" aria-hidden="true"> </i> </a> <a class="yout" target="_blank" href="https://www.youtube.com/channel/UClvjkDoScDNYd72BGlxrJ6A" rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a>
+             - Nayana R, Co-Owner of Omnifoods & a straight Data Scientist for Fractal Analytics. <a class="fb" href="https://www.facebook.com/99nayan99" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook" aria-hidden="true"> </i> </a> <a class="yout" target="_blank" href="https://www.youtube.com/channel/UClvjkDoScDNYd72BGlxrJ6A" rel="noopener noreferrer"> <i class="fa fa-youtube-play" aria-hidden="true"> </i> </a>
 
             </p>
          <cite><img src="img/nayana.jpg"> Nayana R</cite>
@@ -283,10 +365,10 @@
             </p>
             
             <p>
-             - Noelle Knight, Ajax Developer at Facebook.com. <a class="git" href="https://github.com/noelleknight" target="_blank" rel="noopener noreferrer"> <i class="fa fa-github" aria-hidden="true"> </i> </a> <a class="yout" target="_blank" href="https://www.youtube.com/channel/UCA-ACmkbdLdSePOPckbq18A" rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a>
+             - Noelle Knight, Ajax Developer at The Lukens. <a class="git" href="https://github.com/noelleknight" target="_blank" rel="noopener noreferrer"> <i class="fa fa-github" aria-hidden="true"> </i> </a> <a class="yout" target="_blank" href="https://www.youtube.com/channel/UCA-ACmkbdLdSePOPckbq18A" rel="noopener noreferrer"> <i class="fa fa-youtube-play" aria-hidden="true"> </i> </a>
             
             </p>
-         <cite><img src="img/sasha-knight.jpg"> Noelle Knight</cite>
+         <cite><img src="img/noelle-knight.jpg"> Noelle Knight</cite>
 
         </blockquote>
      </div> 
@@ -300,8 +382,8 @@
             </p>
             
             <p>
-             - Armando C. Perez, Singer. <a class="yout" target="_blank" href="https://www.youtube.com/user/PitbullMusic" rel="noopener noreferrer"> <i class="fa fa-youtube" aria-hidden="true"> </i> </a> <a class="fb" href="https://www.facebook.com/pitbull/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook" aria-hidden="true"> </i> </a> <a class="insta" href="https://www.instagram.com/pitbull/?hl=en" rel="noopener noreferrer"> <i class="fa fa-instagram" aria-hidden="true"> </i> </a>
-            <a class="spoti" target="_" href="https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg" rel="noopener noreferrer"> <i class="fa fa-spotify" aria-hidden="true"> </i> </a> <a class="twitt" target="_blank" href="https://twitter.com/pitbull" rel="noopener noreferrer"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
+             - Armando C. Perez, Singer. <a class="yout" target="_blank" href="https://www.youtube.com/user/PitbullMusic" rel="noopener noreferrer"> <i class="fa fa-youtube-play" aria-hidden="true"> </i> </a> <a class="fb" href="https://www.facebook.com/pitbull/" target="_blank" rel="noopener noreferrer"> <i class="fa fa-facebook" aria-hidden="true"> </i> </a> <a class="insta" href="https://www.instagram.com/pitbull/?hl=en" rel="noopener noreferrer"> <i class="fa fa-instagram" aria-hidden="true"> </i> </a>
+            <a class="spoti" target="_blank" href="https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg" rel="noopener noreferrer"> <i class="fa fa-spotify" aria-hidden="true"> </i> </a> <a class="twitt" target="_blank" href="https://twitter.com/pitbull" rel="noopener noreferrer"> <i class="fa fa-twitter" aria-hidden="true"> </i> </a>
 
             </p>
          <cite><img src="img/pitbull.png"> Pitbull</cite>
@@ -313,49 +395,94 @@
              </div>
 
 
-       </section>
+    </section>
 
-       
-
-
-
-
-
-
-
-
-
-
-
-
-       			<section class="form"> 
-       	 
-       	 <div class="container">
-       	 	     <h3 class="text-center">WE GOT YOU COVERED </h3>
-       	 
-                 </div>
-       	 <div class="row gap"> 
-
-				<div class="col-md-3">
-       	     <input type="text" placeholder="First Name" class="form-control"><br>
-             <input type="text" placeholder="Last Name" class="form-control"><br>
-             <input type="email" placeholder="Email" class="form-control"><br>
-             <input type="password" placeholder="Password" class="form-control"><br>
-             
-			 </div>
-			 <div class="col-md-8">
-			 	
-			 <textarea class="form-control" rows="8" placeholder="Any comments, yes please!"></textarea>
-			 <button class="btn btn-warning btn-block">Submit</button>
-
-			 </div>
-              
-
-
+	<section class="section-plans">
+        <h2 class="text-center">START EATING HEALTHY TODAY </h2>
+            <div class="container">
+            	<div class="row">
+                		<div class="col span-1-of-3">
+                    		<div class="plan-box">
+                        		<div>
+                            		<h3>Premium</h3>
+                            		<p class="plan-price">&#x20B9;2000/<span>month</span></p>
+                            		<p class="plan-price-meal">That's only &#x20B9;67 per meal</p>
+                        		</div>
+                        		<div>
+                            		<ul>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>3 meals free every day</li>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            		</ul>
+                        		</div>
+                        		<div>
+                            	<a href="receiptPremiumSection.php" class="btn btn-fps">Sign up now</a>
+                        		</div>
+                    		</div>
+                		</div>
+                		<div class="col span-1-of-3">
+                    		<div class="plan-box">
+                        		<div>
+                            		<h3>Executive</h3>
+                            		<p class="plan-price">&#x20B9;700/<span>month</span></p>
+                            		<p class="plan-price-meal">That's only &#x20B9;23 per meal</p>
+                        		</div>
+                        		<div>
+                            		<ul>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>3 meals free 10 days/month</li>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                                	</ul>
+                        		</div>
+                        		<div>
+                            	<a href="receiptExecutiveSection" class="btn btn-fps">Sign up now</a>
+                        		</div>
+                    		</div>
+                		</div>
+                		<div class="col span-1-of-3">
+                    		<div class="plan-box">
+                        		<div>
+                            		<h3>Starter</h3>
+                            		<p class="plan-price">&#x20B9;200/<span>meal</span></p>
+                            		<p class="plan-price-meal">One meal per timespan</p>
+                        		</div>
+                        		<div>
+                            		<ul>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>3 meals a day</li>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>Order between 9am to 10pm </li>
+                                		<li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            		</ul>
+                        		</div>
+                        	<div>
+                            <a href="recieptStarterSection" class="btn btn-fps">Sign up now</a>
+                        	</div>
+                    		</div>
+                		</div>
                 </div>
-                </section>
+            </div>
+        </section>       
 
-    </div>
+        
+        <section class="form"> 
+       	    <div class="container">
+       	 	    <h3 class="text-center">WE GOT YOU COVERED </h3>
+       	    </div>
+       	 	<div class="row gap"> 
+				<div class="col-md-3">
+       	     		<input type="text" placeholder="First Name" class="form-control"><br>
+             		<input type="text" placeholder="Last Name" class="form-control"><br>
+             		<input type="email" placeholder="Email" class="form-control"><br>
+             		<input type="password" placeholder="Password" class="form-control"><br>
+             	</div>
+			    <div class="col-md-8">
+			 	<textarea class="form-control" rows="8" placeholder="Any comments, yes please!"></textarea>
+			    <button class="btn btn-warning btn-block">Submit</button>
+			 
+			    </div>
+		    </div>
+	</section>
+
+    
 
     
     	<section class="footer">
@@ -365,7 +492,7 @@
     					
     					<h5 class="footerH5"> Registered Address & Corporate Office: </h5>
     						<p class="footerBodyClass">
-    							Omnifoods Ltd., 1st Floor, Opp. Spectrum Dine, GS Road, Guwahati, Assam&amp;781 022, India.
+    							Omnifoods Ltd., 1st Floor, Opp. Spectrum Dine, GS Road, Guwahati, Assam &mdash; 781 022, India.
     						</p>
     					<h5 class="footerH5">Contact Us: </h5>
     						<p class="footerBodyClass" style="font-style: 12px">
@@ -393,9 +520,9 @@
 
                         </p>
                         
-                        <p>
-                            <i class="fa fa-india-flag" aria-hidden="true"> </i> 
-                        </p>
+                        <div class="flagContainer">
+                        	<img src="img/india-flag-512.svg">
+                        </div>
     			    
     			        <div class="footerHeading"> Our Social Media Links :
     			          
