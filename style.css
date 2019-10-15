@@ -39,59 +39,8 @@ header
 h1
 {
    color: white;
-  
-   
-}
-
-.main-nav
-{
-	font-family: arial;
-	list-style:none;
-	float:right;
-	margin-top:60px;  
-}
-
-.main-nav ul
-{
-	display: inline-block;
-	margin-left:20px;
-}
-
-.main-nav ul li
-{
-	display:inline-block;
-	margin-left:20px; 
-}
-
-.main-nav li a
-{
-	color:white;
-	text-decoration:none;
-	font-size:90%;
-	font-weight:bold;
-
-}
-
-.main-nav ul li a :hover ul
-{
-	display:block;
-
-}
-
-.main-nav li:hover a
-{
-	color: #e67e22;
-	border-bottom: 2px solid #e67e22;
-	transition: all 0.5s ease-in;
-	padding:15px 0;
-}
-
-.main-nav li:hover ul li a 
-{
-	color: #e67e22;
-	border-bottom:2px solid #e67e22;
-	transition: all 0.5s ease-in;
-	
+   padding-top: 10px;
+   padding-right: 10px;
 }
 
 .logo img
@@ -100,7 +49,9 @@ h1
 	height:100px;
 	float:left;
     margin-top:30px;
+    padding-right: 150px;
 }
+
 .btn
 {
 	border:1px solid #e67e22;
@@ -111,13 +62,14 @@ h1
 	margin-right: 15px;
 	transition:all 0.5s ease-in;
 }
+
 .btn-half:hover
 {
 	background-color:#e67e22;
 	color:black;
-	
-	
+
 }
+
 .btn-full:hover
 {
 	background-color:#e67e22;
@@ -188,12 +140,15 @@ h3:after
 
 	font-size:40px;
 	color:#e67e22;
-	margin-left: 35%;
+	margin-left:40%;
+	padding-bottom: 5px;
 }
 
 .features h4
 {
-	margin-left:40px;
+	font-size:20px;
+	margin-left:10px;
+	padding-bottom: 10px;
 }
 
 .meal-showcase
@@ -217,14 +172,12 @@ h3:after
 	overflow: hidden;
 }
 
-                 /*design of the image*/
-.meal-photo img
+.meal-photo img  /*design of the image*/
 {
 	width: 100%;
 	height:auto;
 	transform: scale(1.15);  /*scale is used for making things 3D*/
-	transition: all 0.5s;
-
+	transition: all 0.5s ease;
 }
 
 .meal-photo img:hover
@@ -240,14 +193,15 @@ h3:after
 
 .pic img
 {
-	width:40%;
-	margin-left:50%;
-	margin-top:50px;
+	width:50%;
+	margin-left:40%;
+	margin-top:40px;
 }
 
 .works-step
 {
-	margin-top: 50px;	
+	margin-top: 50px;
+	position: relative;
 }
 
 .works-step div
@@ -306,6 +260,51 @@ h3:after
 	color: #e67e22;
 }
 
+.section-plans
+{
+	padding-bottom: 80px;
+	padding-top: 50px;
+}
+.section-plans h2
+{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.section-plans .row
+{
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+.section-plans h3
+{
+	padding-bottom: 30px;
+}
+.section-plans col span
+{
+	padding-bottom: 10px;
+}
+
+.plan-box
+{
+	font-family: tahoma;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border: 1px solid black;
+	color:white;
+	border-radius: 12px;
+	background-color:black;
+}
+
+
+.btn-fps:hover{
+	background-color: #e67e22;
+	color: white;
+}
+.btn-warning:hover{
+	color: white;
+}
+
 .testimonials
 {
 	color:white;
@@ -318,7 +317,6 @@ h3:after
 
 .testimonials p
 {
-	
 	line-height:25px;
 	text-align:left;
 	margin-top: 40px;
@@ -350,20 +348,19 @@ h3:after
 
 .form
 {
-	margin-top:30px;
-	padding-bottom: 60px;
+	margin-top:50px;
+	padding-bottom: 80px;
+	padding-top: 30px;
 }
 
 .footer
 {
-	
-
 	background-image:url(img/omnifoods-footer.jpg);
 	background-size:cover;
-	background-attachment: fixed;
+	background-attachment: absolute;
 	padding-top:80px;
 	padding-bottom:80px;
-	color:white;
+    color:white;
 }
 .footerH5
 {
@@ -378,28 +375,30 @@ h3:after
 {
 	color:darkblue;
 }
-.fb:hover{
+.fb:hover
+{
 	text-decoration: none;
 }
 .yout
 {
-	color:red;
+	color:#b9f2ff;
 	
 }
-.yout:hover{
+.yout:hover
+{
 	text-decoration: none
 }
 .git
 {
 	color:white;
 }
-.git:hover{
+.git:hover
+{
 	text-decoration: none;
 }
 .insta
 {
 	color:pink;
-	
 }
 .insta:hover
 {
@@ -408,14 +407,20 @@ h3:after
 .spoti
 {
 	color:darkgreen;
-	
 }
 .spoti:hover
 {
 text-decoration: none;
 }
-.twitt:hover{
+.twitt:hover
+{
 	text-decoration: none;
+}
+
+.flagcontainer img 
+{
+	height: 50px;
+	width: 50px;
 }
 
 .footerHeading
